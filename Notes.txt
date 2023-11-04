@@ -1,0 +1,167 @@
+NodeJS Ecosystem
+-----
+  Dependencies
+    1. Project Dependencies 
+        * packages that are needed for the app's functionality to run in production environment 
+        * examples: bootstrap, jquery, datatables, chosen, dropzone
+        
+        npm i bootstrap 
+        npm i bootstrap --save 
+        npm install bootstrap -S 
+        npm i --save bootstrap
+
+        in package.json file you can find 
+        "dependencies": {
+          "bootstrap": "^5.3.2"
+        }
+
+    2. Development Dependencies
+        * packages are needed for the app to be developed 
+        * examples: sass, webpack
+
+        npm i webpack --save-dev 
+        npm i webpack -D 
+        npm i -D webpack 
+
+        in package.json file you can find 
+        "devDependencies": {
+          "webpack": "^5.89.0"
+        }
+
+    3. Global Dependencies 
+        * packages are needed for our computer to use system-wide 
+        * examples: typescript 
+
+        npm i typescript --global 
+        npm i typescript -g 
+        npm i -g typescript 
+
+
+======================
+
+Webapps
+----
+  HTML (structural layer) + CSS (presentation layer) + JS (interaction layer)
+
+Browser
+----
+  * HTML Renderer 
+  * CSS Parser 
+  * JS Engine 
+
+ECMA 
+  ECMAScript 
+  ----
+    * standard 
+    * Grammar
+    * rules
+    * Implementations: JavaScript, ActionScript, JScript, QtScript 
+
+    * before 2015, ES was not Object Oriented (no class, no extends, no import, no export) - ES5 
+        * did not have let, const, arrow fn
+
+    * from june 2015, ES has become Object Oriented (class, extends, import, export) - ES2015 
+        * ES2015 has introduced let, const, arrow fn
+
+Data Types in JS 
+------
+  1. Primitive Data Types 
+      string, number, boolean, undefined, null, symbol (ES2015), bigint (ES2017)
+
+  2. Non-Primitive Data Types / Reference Types  
+      Object, Array, RegEx
+
+Types of Languages in terms of Data Type 
+----------
+  1. Strictly-Typed Languages / Strongly-Typed Languages / Statically-Typed Languages
+      Examples: Java, C#, TS 
+      Syntax in Java: 
+      ------
+        String myName = "Arun"; 
+        myName = "Arun Vijay"; // valid
+        myName = 50;  // error -- compilation error 
+
+        int age = 25;
+        age = true; // error -- compilation error 
+
+  2. Loosely-Typed Languages / Dynamically-Typed Languages
+      Examples: JavaScript, PHP, Python 
+      Syntax in JS: 
+      -----
+        var myName = "Arun";  // string 
+        myName = 10; // valid -- number 
+        myName = true; // valid  -- boolean 
+        myName = undefined; // valid -- undefined
+        myName = null; // valid -- null 
+        myName = []; // valid -- object 
+        myName = {}; // valid -- object 
+        myName = function() {
+
+        }
+    
+===========
+
+TypeScript 
+----------
+  * Object Oriented 
+  * class, extends, import, export
+  * feature-rich 
+  * modern
+  * TS = JS + Data Typing  
+  * TS is a superset of JS 
+  * Strongly-Typed Language 
+
+
+  Syntax of TS: 
+  -------------
+    1. Explicit Data Typing 
+        var x: number = 10;
+        x = 100; // valid
+        x = true; // error 
+        x = undefined; // error 
+        x = null; // error 
+        x = []; // error 
+        x = {}; // error  
+        x = function () { // error
+
+        }
+
+    2. Implicit Data Typing 
+        var y = 20; // number 
+        y = 200; // valid
+        y = true; // error 
+    
+======
+TypeScript Compiler 
+-------
+  TS => (TypeScript Compiler) => JS => Browser => output 
+
+----
+
+/* Casing Conventions
+  1. PascalCase 
+      * classes 
+      * interfaces 
+      * custom types in ts 
+      * namespaces in ts 
+      * enums 
+
+  2. camelCase 
+      * variables, let, const
+      * functions, method, event handlers 
+      * arrays, objects 
+        const authorName = "Arun";
+
+  3. kebab-case 
+      * css classes if you are not following BEM style 
+      * project name 
+      * files, folders, assets, images, script files, css files 
+      * urls must be in this case.
+
+  4. snake_case 
+      * Not recommended for anything 
+      * If you follow BEM syntax for style -- this is valid 
+      * if your architect accepts use this for const 
+        example: const AUTHOR_NAME = "Arun";
+
+*/ 
