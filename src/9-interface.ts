@@ -1,5 +1,5 @@
 // Interface
-interface Employee {
+interface IEmployee {
   name: string;
   phone: number;
   address: string;
@@ -8,7 +8,7 @@ interface Employee {
   exp?: number; // optional property
 }
 
-var employee1: Employee = {
+var employee1: IEmployee = {
   name: "Arun",
   phone: 13245677,
   address: "Door #5, Wall street",
@@ -16,7 +16,7 @@ var employee1: Employee = {
   city: "Chennai",
 };
 
-var employee2: Employee = {
+var employee2: IEmployee = {
   name: "John",
   phone: 768902435677,
   address: "Door #10, Wall street",

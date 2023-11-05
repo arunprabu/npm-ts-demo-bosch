@@ -1,3 +1,14 @@
 1. learn about where the global dependencies be installed in Windows?
 2. learn about the different between custom type and interface. 
 3. learn about return type never 
+4. learn about unknown type 
+5. learn about typeof in JS and TS 
+6. learn about keyof in TS 
+7. learn about for in loop in JS 
+8. learn about rest operator and spread operator (...)
+9. learn ReadOnly in TS 
+
+
+To learn about ES2015 features 
+Refer: https://leanpub.com/understandinges6/read
+
